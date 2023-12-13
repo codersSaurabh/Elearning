@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Python/introstyle.css">
+    <title> Python Comments</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="/index.html"> <h6>Elearning</h6></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Python
+            </a>
+            <!--adding link of pages to drop down-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+                <a class="dropdown-item" href="Intro.html">Introduction</a>
+                <a class="dropdown-item" href="/Python/keyword.html">Pthon keyword</a>
+                <a class="dropdown-item" href="/Python/Identifier.html">Pyhton Identifiers</a>
+                <a class="dropdown-item" href="/Python/pythonVariable.html">Pyhton Variable</a>
+                <a class="dropdown-item" href="/Python/comments.html">Python Comments</a>
+                <a class="dropdown-item active" href="/Python/Data types.html">Python data type</a>
+
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!--Adding link of pages to slidebar-->
+    <div class="sidebar">
+      <a href="/Python/Intro.html" >Intoduction</a>
+      <a  href="/Python/keyword.html">Pthon keyword</a>
+      <a  href="Identifier.html">Pyhton Identifiers</a>
+      <a href="/Python/pythonVariable.html">Python variable</a>
+      <a href="/Python/comments.html">Python comments</a>
+      <a class="active" href="/Python/Data types.html">Python Data Types</a>
+      <div class="nestedsidebar">
+        <a href="/Python/Mutable.html">Mutable data types</a>
+        <a href="">Immutable data types</a>
+       
+      </div>
+      <a Style="margin-top:16vh;"href="/python/Casting.html">Python Casting</a>
+      
+    </div>
+  <!--Starting the main content of the page(Notes)-->
+    <div class="mr-4 content">
+    <img class="my-4 logo"src="/images/Screenshot (2).png" alt="logo" width="20%" height="20%">
+    <h1 style="color:black;">Data type</h1>
+    <p>Data type is the type of data that is hold by a variable</p>
+    <p>To check the data type of any variable use the operator <mark><u>type()</u></mark></p>
+    <h3 >1. Data types for Number</h3>
+    <ul>
+
+        <li><span style="font-size: 1.3rem;">(a)Integer: </span>
+            It is the  normal representation of wholle nummbers. The integer can be positive
+                 or negative
+            <P><span  style="font-size:1.3rem;">(b)Boolean: </span>These represent the truth values <strong>
+                False </strong> and <strong>True</strong>. The Boolean type is a subtype of plain integers,
+            and Boolean values False and True behave like the values 0 and 1, respectvely.</P>
+        </li>
+        <li><span style="font-size: 1.3rem;">Floating point Numbers: </span>
+            In Python, floating point numbers represent machine-level double 
+            precision floating point numbers.
+        </li>
+        <li><span style="font-size: 1.3rem;">Complex number: </span>
+        Python represents complex numbers in the form A+B j. Complex numbers are a composite
+    quantity made of two parts: <span style="font-family:cursive;">
+    the real part and the imaginary part,</span> both of which are represented internally as float values.</li>
+
+    </ul>
+    <table class="table table-bordered table-hover">
+        <caption>Fig: The Range of Python Numbers</caption>
+        <tr>
+        <th scope="col"Data Type>Data type</th>
+        <th scope="col">Range</th>
+    </tr>
+    <tr>
+        <td>Integers</td>
+        <td>an unlimited range, subject to available(virtual) memory only</td>
+    </tr>
+    <tr>
+        <td>Boolean</td>
+        <td>two values True(1), False(0)</td>
+    </tr>
+    <tr>
+        <td>Floating point numbers</td>
+        <td>an unllimited range, subject availabe (virtual) memory on underlying machine
+             architecture</td>
+    </tr>
+    <tr>
+        <td>Comple Number</td>
+        <td>same as floating point numbers because the real and imaginary parts are
+             represented an float</td>
+    </tr>
+
+    </table>
+
+<h3 style="color:black;">2. Data type for strings</h3>
+<ul>
+    <li>All strings in Python are sequences of pure unicode cahractes.</li>
+    <li>an string can hold any type of known characters</li>
+
+<h4 class="example">Example of legal strings in Python -</h4>
+    <p class="example" style="color:rgb(192, 39, 64);">"abcd", "1234", '@@@',  '$%&^*'</p>
+    <p class="example"class="my-1">Each character of string can be individually accessed by index.</p>
+    </ul>
+<h3 class="my-2"style="color:black">3. Lists</h3>
+<ul>
+    <li>A List in Python represents a group of comma-separated values of any data types
+         between square brackets.</li>
+<h4 class="example">Example-</h4>
+<p class="example">[1,2,3,4]<br>
+['a','i','o','p']<br>
+["python",8.21,8]</p>
+</ul>
+<h3 class="my-2"style="color:black">4. Tuples</h3>
+<ul>
+    <li>Tupels are represented as group of comma-separated values of any data types within paranthesis.
+        We will discussed about the tuples later in this tutotrial
+    </li>
+    <h4 class="example">Example -</h4>
+    <p class="example">
+        p=(1,2,5,6)<br>
+        tpl=('t','g','ram')<br>
+        mix=(78,1,"hello")
+    </p>
+</ul>
+<h3 style="color: black;">5. Dictionaries</h3>
+<ul>
+    <li>The dictionary is an unordered set of comma-separated key:value pairs, within { }</li>
+    <li>In dictionary two same keys are not allowed.
+     <h4 class="example">Example -</h4>
+     <p class="example">{"India":1, "China":2, "America":3}</p>
+    </li>
+</ul>
+ </div>
+  <a  class="lg btn btn-primary button my-4" href="/Python/comments.html"
+    role="button">Previous</a>
+    
+  <a style="position: absolute; right: 10%;" class="lg btn btn-primary my-4" href="/Python/Mutable.html"
+  role="button">Next</a>   <div class="footer">footer</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

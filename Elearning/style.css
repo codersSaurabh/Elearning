@@ -1,0 +1,60 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+#boxes{
+   
+    width: 300px;
+    height: 200px;
+    border-radius: 200px;
+    display: inline-block;
+    margin:6vw;
+}
+.subject{
+    color:brown;
+    width: 120%;
+    height: 65%;
+    border-style:solid 2px;
+    border-color: rgb(202 196 196);
+    background-position: center;
+    background-size: cover;
+    margin: 10px 10px 0px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+ 
+}
+.title{
+    border-radius: 10px;
+    width:120%;
+    height:25%;
+    border-color: rgb(202 196 196);
+    margin:0px 30px 10px 10px;
+    display: flex;
+    border-style: solid 2px;
+    border-top-style: none ;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: oblique;
+   color:#1d75c1;
+   background-color:rgb(140, 231, 245);
+   padding-left: 1rem;
+}
+a:link{
+    color: green;
+}
+   
+
+    
+
+.footer{
+    justify-content: center;
+    color:blue;
+    text-align: center;
+    font-style: oblique;
+    width:100vw;
+    position: fixed;
+    bottom:0%;
+    background-color: red;
+    margin-top: 10px;
+
+}

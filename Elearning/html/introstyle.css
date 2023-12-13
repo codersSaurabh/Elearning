@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.button{
+  position: absolute;
+   left:26%;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 1%;
+}
+.example{
+  padding:0.6rem;
+  
+  background-color: #eceef1;
+}
+
+/*nested sidebar*/
+.nestedsidebar{
+  margin-top: 1vh;
+  padding: 0;
+  width: 185px;
+  background-color: #d5d2d2;
+  position: fixed;
+  height: 15%;
+  overflow: auto;
+  left: 1%;
+} 
+.nestedsidebar a{
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+  }
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+
+}
+
+@media screen and (max-width: 780px) {
+  .sidebar {
+    display: none;
+   
+  }
+  .nestedsidebar{
+   display: none;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  div.footer {
+    margin-left: 0%;
+    width: 100vw;
+  }
+  .button{
+    position: absolute;
+    left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar  {
+    display: none;
+  }
+  .nestedsidebar a{
+   display: none;
+  }
+
+  body {
+    background-color: rgb(204 233 206);
+  }
+  .button{
+    position: absolute;
+    left: 10%;
+  }
+
+  div.footer {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+}
+
+.footer {
+  color: blue;
+  font-style: oblique;
+  width: 90vw;
+
+  margin-left: 9%;
+  background-color: rgb(65, 61, 61);
+  margin-top: 10vh;
+}
+
+.logo {
+  border-radius: 200px;
+  width: 10vw;
+
+}
